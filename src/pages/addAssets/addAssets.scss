@@ -1,0 +1,98 @@
+page-addAssets {
+    ion-header {
+        
+        .toolbar-background {
+            background-color: #fff;
+        }
+
+        .icon-back {
+            width: 24px;
+            height: 24px;
+            margin-left: 16px;
+        }
+    
+        .toolbar-title {
+            font-size: 18px;
+            color: $blueBlack;
+        }
+    }
+
+    ion-content {
+        background-color: $bgColor !important;
+
+        .checkbox-list {
+            @include cards;
+            padding: 4px;
+
+            ul {
+                padding: 0;
+                margin: 0;
+
+                li {
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 100%;
+                    height: 56px;
+                    padding-left: 16px;
+
+                    &:last-child {
+                        .item-right {
+                            border-bottom: none;
+                        }
+                    }
+
+                    .item-left {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-right: 12px;
+
+                        img.icon-cny {
+                            width: 38px;
+                            height: 32px;
+                            display: block;
+                        }
+
+                        
+                    }
+
+                    .item-right {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: row;
+                        width: 100%;
+                        border-bottom: 1px solid $lineColor;
+                        line-height: 56px;
+                        padding-right: 16px;
+
+                        .cny-name {
+                            color: $blueBlack;
+                            font-size: 16px;
+                        }
+
+                        .checkbox-content {
+                            input.input-checkbox {
+                                width: 17px;
+                                height: 17px;
+                                position: relative;
+                                left: 17px;
+                                opacity: 0;
+                                z-index: 1;
+                            }
+    
+                            img.icon-checkbox {
+                                width: 16px;
+                                height: 16px;
+                                z-index: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

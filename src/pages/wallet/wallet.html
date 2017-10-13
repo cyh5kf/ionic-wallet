@@ -1,0 +1,91 @@
+<ion-content padding>
+  <div class="top">
+    <h2>My Private Wallet</h2>
+    <img src="../../assets/icon/icon_wallet_list_2x.png" alt="" menuToggle>
+  </div>
+
+  <p class="number">309,812<span class="decimal">.781</span></p>
+
+  <div class="operate-content">
+    <button class="btn-style currency">
+      <div class="currency-content">
+          <span>CNY</span>
+          <img src="../../assets/icon/icon_switchcoin_2x.png" alt="">
+      </div>
+    </button>
+    <button class="btn-style scan">
+      <div class="scan-content">
+          <img src="../../assets/icon/icon_scan_s_2x.png" alt="">
+          <span>Scan</span>
+      </div>
+    </button>
+    <button class="btn-style add-assets">
+      <div class="add-content">
+          <img src="../../assets/icon/icon_add_l_d_2x.png" alt="">
+          <span>Add Assets</span>
+      </div>
+    </button>
+  </div>
+
+  <ul class="show-detail">
+    <li>
+      <div class="content1">
+        <div class="left">
+          <img src="../../assets/icon/icon_btc.png" alt="" class="icon-currency">
+          <span class="currency-name">BTC</span>
+        </div>
+        <span class="amount">11.0921</span>
+      </div>
+      <div class="content2">
+        <span class="price riseUp"><img src="../../assets/icon/icon_price_up_s_2x.png" alt=""> 20917.981</span>
+        <span class="conversion">≈ 50120.76 CNY</span>
+      </div>
+    </li>
+    <li>
+      <div class="content1">
+        <div class="left">
+          <img src="../../assets/icon/icon_btc.png" alt="" class="icon-currency">
+          <span class="currency-name">ETH</span>
+        </div>
+        <span class="amount">11.0921</span>
+      </div>
+      <div class="content2">
+        <span class="price fallDown"><img src="../../assets/icon/icon_price_down_s_2x.png" alt=""> 20917.981</span>
+        <span class="conversion">≈ 50120.76 CNY</span>
+      </div>
+    </li>
+    <li>
+      <div class="content1">
+        <div class="left">
+          <img src="../../assets/icon/icon_btc.png" alt="" class="icon-currency">
+          <span class="currency-name">BTC</span>
+        </div>
+        <span class="amount">11.0921</span>
+      </div>
+      <div class="content2">
+        <span class="price riseUp"><img src="../../assets/icon/icon_price_up_s_2x.png" alt=""> 20917.981</span>
+        <span class="conversion">≈ 50120.76 CNY</span>
+      </div>
+    </li>
+    <li>
+      <div class="content1">
+        <div class="left">
+          <img src="../../assets/icon/icon_btc.png" alt="" class="icon-currency">
+          <span class="currency-name">ETH</span>
+        </div>
+        <span class="amount">11.0921</span>
+      </div>
+      <div class="content2">
+        <span class="price fallDown"><img src="../../assets/icon/icon_price_down_s_2x.png" alt=""> 20917.981</span>
+        <span class="conversion">≈ 50120.76 CNY</span>
+      </div>
+    </li>
+  </ul>
+
+</ion-content>
+
+<div class="menu-page" *ngIf="isShow" (click)="closeMenu($event)">
+  <div class="menu-content" [ngClass]="{'changeWidth': isShow}">
+
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<ion-menu type="overlay" [content]="menuContent" side="right" (ionOpen)="menuOpened()" (ionClose)="menuClosed()">
+  
+  <ion-content>
+    <ion-list>
+      <button menuClose *ngFor="let p of pages" (click)="openPage(p)">
+        <div class="button-content">
+            <div class="page-title"><img src="../../assets/icon/icon_wallet_2x.png" alt="">{{p.title}}</div>
+            <p class="number">CNY 309812.781</p>
+        </div>
+      </button>
+    </ion-list>
+
+    <div class="btn-style">
+      <img src="../../assets/icon/icon_add_l_w_2x.png" alt="">
+      <span>Create Wallet</span>
+    </div>
+
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #menuContent swipeBackEnabled="false"></ion-nav>

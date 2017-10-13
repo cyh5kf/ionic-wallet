@@ -1,0 +1,81 @@
+page-sidemenus {
+    ion-menu {
+        background-color: rgba(255, 255, 255, .9);
+    }
+    .menu-inner {
+        width: 80%;
+        box-shadow: 0 0 12px rgba(0, 0, 0, .5) !important;
+
+        ion-content {
+            background-color: $darkBlue !important;
+            position: relative;
+            
+            ion-list {
+                margin-top: 16px;
+                display: flex;
+                flex-direction: column;
+
+                button {
+                    background-color: inherit;
+                    text-align: left;
+                    height: 80px;
+                    padding: 18px 0 18px 56px;
+                    
+                    .button-content {
+                        border-bottom: 0.55px solid rgba(255, 255, 255, .2);
+
+                        .page-title {
+                            color: #fff;
+                            font-size: 18px;
+                            position: relative;
+                            
+                            img {
+                                width: 24px;
+                                height: 24px;
+                                position: absolute;
+                                top: -4px;
+                                left: -40px;
+    
+                            }
+                        }
+    
+                        .number {
+                            margin-top: 12px;
+                            color: #fff;
+                            font-size: 14px;
+                            opacity: .5;
+                        }
+                    }
+                    
+                }
+
+                .active {
+                    background-color: $activeBlue;
+                }
+            }
+
+            .btn-style {
+                width: 180px;
+                height: 36px;
+                background-color: rgba(0, 0, 0, .4);
+                position: absolute;
+                bottom: 36px;
+                left: 50%;
+                margin-left: -90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-size: 14px;
+                border-radius: 12px;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+    
+}

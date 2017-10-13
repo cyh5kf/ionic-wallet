@@ -1,0 +1,127 @@
+page-walletSend {
+    ion-header {
+        
+        .toolbar-background {
+            background-color: #fff;
+            border: none !important;
+        }
+
+        .icon-back {
+            width: 24px;
+            height: 24px;
+            margin-left: 16px;
+        }
+    
+        .toolbar-title {
+            font-size: 18px;
+            color: $blueBlack;
+        }
+    }
+
+    ion-content {
+        background-color: $bgColor !important;
+
+        .payee-address {
+            margin-top: 32px;
+
+            h3 {
+                font-size: 14px;
+                color: $darkGray;
+            }
+
+            .pay-content {
+                @include cards;
+                position: relative;
+                
+                ion-input {
+                    .text-input {
+                        margin: 0 !important;
+                    }
+                    
+                }
+
+                .btn-scan {
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                }
+            }
+        }
+
+        .address-book {
+            margin-top: 32px;
+
+            .title-top {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                h3 {
+                    font-size: 14px;
+                    color: $darkGray;
+                    margin: 0;
+                }
+
+                .right {
+
+                    img {
+                        width: 12px;
+                        height: 12px;
+                        margin-right: 8px;
+                        vertical-align: center;
+                        margin-top: 2px;
+                    }
+
+                    .add-address {
+                        font-size: 14px;
+                        color: $darkBlue;
+                    }
+                }
+            }
+            
+            .address-list {
+                @include cards;
+                margin-top: 12px;
+                padding: 0 0 0 16px;
+
+                .list-item:last-child {
+                    border-bottom: none;
+                }
+
+                .list-item {
+                    padding: 14px 0;
+                    position: relative;
+                    border-bottom: 0.5px solid $lineColor;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    .name {
+                        font-size: 16px;
+                        color: $blueBlack;
+                    }
+
+                    .address {
+                        font-size: 12px;
+                        color: $lightGray;
+                        margin-top: 8px;
+                    }
+    
+                    .btn-arrow {
+                        width: 12px;
+                        height: 12px;
+                        position: absolute;
+                        right: 16px;
+                        top: 26px;
+                    }
+                }
+
+                
+            }
+        }
+    }
+    
+}

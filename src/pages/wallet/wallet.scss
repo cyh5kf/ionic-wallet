@@ -1,0 +1,236 @@
+page-wallet {
+  ion-content {
+    background-color: $bgColor !important;
+    z-index: 0;
+
+    .top {
+      margin-top: 32px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      h2 {
+        font-size: 24px;
+        color: $blueBlack;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .number {
+      color: $darkBlue;
+      font-size: 36px;
+      margin-bottom: 17px;
+
+      .decimal {
+        font-size: 20px;
+      }
+    }
+
+    .operate-content {
+      display: flex;
+      flex-direction: row;
+
+      .btn-style {
+        background-color: $bgBtn;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        color: $lightGray;
+        font-size: 12px;
+        padding: 8px 0;
+
+        img {
+          width: 12px;
+          height: 12px;
+        }
+      }
+
+      .currency {
+        width: 18%;
+        margin-right: 4%;
+
+        .currency-content {
+          width: 44px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          span {
+            margin-right: 6px;
+          }
+        }
+      }
+
+      .scan {
+        width: 36%;
+        margin-right: 4%;
+
+        .scan-content {
+          width: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            margin-right: 8px;
+          }
+        }
+      }
+
+      .add-assets {
+        width: 38%;
+
+        .add-content {
+          width: 85px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    .show-detail {
+      padding-left: 0;
+      margin-top: 28px;
+
+      li {
+        list-style-type: none;
+        padding: 16px 16px 24px !important;
+        margin-bottom: 14px;
+        @include cards;
+
+        .content1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          .left {
+            display: flex;
+            align-items: center;
+
+            .icon-currency {
+              width: 32px;
+              height: 32px;
+              margin-right: 12px;
+            }
+
+            .currency-name {
+              font-size: 16px;
+              color: $blueBlack;
+            }
+          }
+
+          .amount {
+            color: $darkBlue;
+            font-size: 24px;
+            font-weight: bold;
+          }
+        }
+
+        .content2 {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 40px;
+          margin-top: 8px;
+          font-size: 12px;
+
+          .price {
+
+            img {
+              width: 6px;
+              height: 12px;
+              vertical-align: middle;
+              margin-bottom: 2px;
+            }
+          }
+
+          .riseUp {
+            color: $upGreen;
+          }
+
+          .fallDown {
+            color: $warnTip;
+          }
+
+          .conversion {
+            color: #B9C2C6;
+          }
+        }
+      }
+    }
+  }
+  .menu-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(247, 251, 252, .9);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    .menu-content {
+      background-color: $darkBlue;
+      width: 80%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      animation: turnLeft .2s;
+      -moz-animation: turnLeft .2s;
+      /* Firefox */
+      -webkit-animation: turnLeft .2s;
+      /* Safari 和 Chrome */
+      -o-animation: turnLeft .2s;
+      /* Opera */
+    }
+
+    @keyframes turnLeft {
+      from {
+        width: 0;
+      }
+      to {
+        width: 80%;
+      }
+    }
+
+    @-moz-keyframes turnLeft {
+      from {
+        width: 0;
+      }
+      to {
+        width: 80%;
+      }
+    }
+
+    @-webkit-keyframes turnLeft {
+      from {
+        width: 0;
+      }
+      to {
+        width: 80%;
+      }
+    }
+
+    @-o-keyframes turnLeft {
+      from {
+        width: 0;
+      }
+      to {
+        width: 80%;
+      }
+    }
+  }
+}

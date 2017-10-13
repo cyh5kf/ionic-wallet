@@ -1,0 +1,148 @@
+page-helpWord {
+    ion-content {
+        background-color: $bgColor !important;
+
+        .icon-back {
+            width: 24px;
+            height: 24px;
+            margin-top: 10px;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: $blueBlack;
+        }
+
+        ul.select-content {
+            width: 100%;
+            height: 144px;
+            background-color: $darkBlue;
+            border-radius: 12px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+            padding: 15px 24px 15px;
+            margin-top: 24px;
+
+            li {
+                color: #fff;
+                font-size: 16px;
+                list-style-type: none;
+                float: left;
+                margin-right: 24px;
+                line-height: 38px;
+            }
+        }
+
+        .quantity {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+                color: $darkGray;
+                font-size: 14px;
+            }
+
+            .btn-style {
+                width: 48px;
+                height: 32px;
+                font-size: 14px;
+                background-color: #fff;
+                border-color: #fff;
+                border-radius: 15px;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+                .button-inner {
+                    color: $darkGray;
+                }
+            }
+
+            .active {
+                border-color: $darkBlue;
+                box-shadow: 0 1px 4px rgba(0, 188, 255, .5);
+
+                .button-inner {
+                    color: $darkBlue;
+                }
+            }
+        }
+
+        .advanced {
+            width: 100%;
+            margin-top: 48px;
+            background-color: #fff;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+            border-radius: 12px;
+
+            .top-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 16px;
+
+                .title {
+                    color: $blueBlack;
+                    font-size: 16px;
+                }
+
+                .icon-switch {
+                    width: 16px;
+                    height: 10px;
+                }
+            }
+
+            .addPassword {
+                margin-left: 16px;
+                padding-bottom: 32px;
+                border-top: 1px solid $lineColor;
+
+                .content {
+                    padding-right: 16px;
+
+                    p {
+                        color: $darkGray;
+                        font-size: 14px;
+                    }
+
+                    .item-block {
+                        padding-left: 0;
+                        color: $darkBlue;
+
+                        .item-inner {
+                            border-bottom: 2px solid #D4DCE0;
+                        }
+                    }
+
+                    .item-block.focus {
+
+                        .item-inner {
+                            border-bottom: 2px solid $darkBlue;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tip {
+            color: $warnTip;
+            font-size: 12px;
+            margin-top: 16px;
+            line-height: 18px;
+        }
+    }
+
+    ion-footer {
+        ion-toolbar {
+            .toolbar-background {
+                background-color: #fff;
+            }
+            .toolbar-content {
+                .toolbar-title {
+                    color: $darkBlue;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+}

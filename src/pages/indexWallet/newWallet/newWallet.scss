@@ -1,0 +1,59 @@
+page-newWallet {
+    ion-content {
+        background-color: $bgColor !important;
+
+        .main {
+            padding-top: 450px;
+
+            .btn-style {
+                width: 240px;
+                height: 44px;
+                margin: 0 auto;
+                border-radius: 12px;
+                font-size: 16px;
+                display: block;
+                box-shadow: 0 1px 12px rgba(0, 144, 195, .3);
+            }
+
+            .new-wallet {
+                background-color: $darkBlue;
+            }
+
+            .input-wallet {
+                color: $darkBlue;
+                margin-top: 24px;
+                background-color: #fff;
+            }
+
+            .checkbox-item {
+                background-color: transparent;
+                color: #8D9AA1;
+                width: 280px;
+                padding-left: 0;
+                margin: 36px auto 0;
+
+                .bold {
+                    color: $darkBlue;
+                }
+
+                .item-inner {
+                    border: none;
+                }
+
+                .checkbox-icon {
+                    border-radius: 4px;
+                    border-color: $darkBlue;
+                    background-color: $darkBlue;
+                    .checkbox-inner {
+                        width: 5px;
+                        height: 10px;
+                        border-width: 2px;
+                        border-top-width: 0;
+                        border-left-width: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}

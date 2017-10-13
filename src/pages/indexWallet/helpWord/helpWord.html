@@ -1,0 +1,50 @@
+<ion-content padding >
+  <img src="../../../assets/icon/icon_back_d_2x.png" alt="back" class="icon-back">
+  <h3>Remember the<br>Mnemonic Word Below</h3>
+  <ul class="select-content">
+    <li>Time</li>
+    <li>July</li>
+    <li>Boy</li>
+    <li>Earth</li>
+    <li>Noon</li>
+    <li>Morning</li>
+    <li>Summer</li>
+    <li>Hospital</li>
+    <li>Lion</li>
+    <li>Phone</li>
+    <li>Cup</li>
+    <li>Young</li>
+  </ul>
+  <div class="quantity">
+    <span>Quantity of Mnemonic Word</span>
+    <div class="btn-select">
+      <button ion-button outline class="btn-style active">12</button>
+      <button ion-button outline class="btn-style">24</button>
+    </div>
+  </div>
+  <div class="advanced">
+    <div class="top-bar">
+      <span class="title">Advanced</span>
+      <img src="../../../assets/icon/icon_switchdown_2x.png" alt="switchdown" class="icon-switch arrowDown">
+    </div>
+    <div class="addPassword">
+      <div class="content">
+        <p>Add a Password to Protect Your<br>Mnemonic Word</p>
+        <ion-item class="focus"> 
+          <ion-input type="text" placeholder="Input Password"></ion-input> 
+        </ion-item> 
+        <ion-item> 
+          <ion-input type="password" placeholder="Repeat Password"></ion-input> 
+        </ion-item> 
+      </div>
+    </div>
+  </div>
+
+  <p class="tip">* Please keep the password savely, Lost the password
+      you may not find your assets back.</p>
+</ion-content>
+<ion-footer>
+  <ion-toolbar (click)="showAlert()">
+    <ion-title>I Got It</ion-title>
+  </ion-toolbar>
+</ion-footer>
